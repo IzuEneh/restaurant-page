@@ -6,23 +6,28 @@
 
 .content {
     flex: 1;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 25% auto;
-    height: 100%;
-
-}
-
-.header {
-    background-color: black;
-    opacity: 0.65;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+
+
+.header {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
 }
 
 .tab-wrapper {
     padding-top: 15px;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 .tab-wrapper:hover{
@@ -30,18 +35,15 @@
     transition-duration: 0.2s;
 }
 
-.tab-button {
-    font-weight: 600;
-    font-size: 2rem;
+.tab-wrapper.selected {
+    border-bottom: 2px solid white;
 }
-
 
 .navButtons {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 25px;
-    height: 25%;
+    gap: 30px;
 }
 
 .title {
@@ -50,4 +52,9 @@
 
 .text-color {
     color: red;
+}
+
+.transparent-bg {
+    background-color: black;
+    opacity: 0.65;
 }
